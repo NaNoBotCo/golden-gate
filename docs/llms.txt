@@ -1,0 +1,9 @@
+# The Golden Gate Bridge · สะพานโกลเดนเกต
+
+> The Golden Gate Bridge drawn by arithmetic in the browser: main cable y = 470(x/2100)^2 ft over the 4,200 ft span, side-span dip 470(1125/4200)^2 = 33.7 ft, suspenders every 50 ft, under the sun, moon and stars at their positions over the bridge now, with live fog, wind and cloud from Open-Meteo and the tide from NOAA station 9414290. Toys: catenary vs parabola with the tower pull; a Kelvin-style tide machine of eight wheels (M2 K1 O1 S2 N2 P1 Q1 K2) least-squares fitted to NOAA's prediction; what fits under the deck at this tide; the railing's recorded notes (354, 398, 439, 481 Hz) and an Aeolian-tone calculator; the District's continuous painting and its CMYK 0/69/100/6 colour; thermal sag of the cable; great-circle distance from the reader. English and Thai.
+
+- [English](https://nanobotco.github.io/golden-gate/)
+- [ไทย](https://nanobotco.github.io/golden-gate/th/)
+- Sections: #hang #tide #fit #fog #sing #paint #breathe #globe #days #years #sources
+- Test hooks: ?t=ISO time, ?fog=0..1, ?cloud=0..1, ?yaw=compass bearing of the camera
+- Text CC BY 4.0, NaNoBotCo. Code MIT. Photographs from Wikimedia Commons keep their own licences, credited on each.

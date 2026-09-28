@@ -1,0 +1,440 @@
+<!doctype html><html lang="en" data-root=""><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google" content="notranslate">
+<title>The Golden Gate Bridge · drawn by arithmetic</title>
+<meta name="description" content="The Golden Gate Bridge drawn by arithmetic under the sun, moon, fog and tide over it right now. Hang the cable, run Kelvin&#x27;s tide wheels, see what fits underneath, hear the railing sing, paint it, and measure it from where you are.">
+<meta name="theme-color" content="#f04a00">
+<link rel="canonical" href="https://nanobotco.github.io/golden-gate/">
+<link rel="alternate" hreflang="en" href="https://nanobotco.github.io/golden-gate/"><link rel="alternate" hreflang="th" href="https://nanobotco.github.io/golden-gate/th/"><link rel="alternate" hreflang="x-default" href="https://nanobotco.github.io/golden-gate/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="The Golden Gate Bridge · สะพานโกลเดนเกต">
+<meta property="og:title" content="The Golden Gate Bridge"><meta property="og:description" content="The Golden Gate Bridge drawn by arithmetic under the sun, moon, fog and tide over it right now. Hang the cable, run Kelvin&#x27;s tide wheels, see what fits underneath, hear the railing sing, paint it, and measure it from where you are."><meta property="og:url" content="https://nanobotco.github.io/golden-gate/">
+<meta property="og:image" content="https://nanobotco.github.io/golden-gate/card.jpg"><meta property="og:image:secure_url" content="https://nanobotco.github.io/golden-gate/card.jpg"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Golden Gate Bridge drawn by arithmetic at sunset, fog pouring under the deck">
+<meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="th_TH">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://nanobotco.github.io/golden-gate/card.jpg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" href="https://nanobotco.github.io/golden-gate/llms.txt" title="llms.txt">
+<style>/* bands.css — full-bleed parallax bands.
+ *
+ * Four layers, bottom to top:
+ *   1  the photograph, background-attachment:fixed, so it holds still while the page
+ *      moves over it. This is the whole trick.
+ *   2  ::before, a gradient scrim weighted heaviest where the type sits.
+ *   3  ::after, a flat brand tint on mix-blend-mode:multiply, so a band never fights
+ *      the page it is sitting in.
+ *   4  the type.
+ *
+ * Expects these custom properties from the host page: --ink (the page's darkest),
+ * --accent (the brand colour used in the tint and the kicker), --display (a condensed
+ * or heavy face), --body. Everything else is self-contained.
+ */
+
+.band{
+ position:relative;isolation:isolate;
+ /* full bleed out of a centred column without knowing the column's width */
+ margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);width:100vw;
+ min-height:clamp(260px,52vh,520px);display:grid;align-items:center;
+ background-size:cover;background-position:center;background-repeat:no-repeat;
+ background-attachment:fixed;background-color:#0b0906;
+ border-top:3px solid var(--ink,#111);border-bottom:3px solid var(--ink,#111);
+ margin-block:2.6rem}
+
+.band::before{content:"";position:absolute;inset:0;z-index:-2;
+ background:linear-gradient(180deg,rgba(6,5,4,.80) 0%,rgba(6,5,4,.34) 38%,
+  rgba(6,5,4,.46) 62%,rgba(6,5,4,.86) 100%)}
+
+.band::after{content:"";position:absolute;inset:0;z-index:-1;mix-blend-mode:multiply;
+ background:radial-gradient(120% 90% at 22% 32%,
+   color-mix(in srgb,var(--accent,#e0322b) 20%,transparent),transparent 62%),
+  linear-gradient(90deg,rgba(11,9,6,.55),transparent 55%)}
+
+.band .in{max-width:68rem;margin:0 auto;padding:clamp(2rem,6vw,4.2rem) 1rem;width:100%}
+.band .kicker{display:block;font-family:var(--display,system-ui);font-size:.7rem;
+ font-weight:800;letter-spacing:.34em;text-transform:uppercase;
+ color:color-mix(in srgb,var(--accent,#e0322b) 62%,white);margin-bottom:.7rem}
+.band h2{font-family:var(--display,system-ui);font-size:clamp(1.9rem,6vw,3.5rem);
+ line-height:.98;margin:0 0 .5rem;border:0;color:#fff;text-transform:uppercase;
+ letter-spacing:-.01em;text-shadow:0 2px 26px rgba(0,0,0,.55);max-width:22ch}
+.band p{color:#f2e9dc;font-size:clamp(1rem,2.2vw,1.2rem);max-width:34ch;margin:.3rem 0 0;
+ text-shadow:0 1px 14px rgba(0,0,0,.7)}
+.band .big{font-family:var(--display,system-ui);font-size:clamp(3rem,11vw,7rem);
+ line-height:.86;font-weight:800;color:#fff;margin:0;letter-spacing:-.02em;
+ text-shadow:0 3px 34px rgba(0,0,0,.6)}
+.band .big small{display:block;font-family:var(--body,system-ui);font-size:.16em;
+ letter-spacing:.24em;text-transform:uppercase;font-weight:800;margin-top:.5rem;
+ color:color-mix(in srgb,var(--accent,#e0322b) 62%,white)}
+.band .btn{margin-top:1.3rem}
+
+/* the credit sits on the band, because a borrowed photograph carries its licence */
+.band .cred{position:absolute;right:0;bottom:0;z-index:1;font-size:.6rem;color:#cbbfae;
+ background:rgba(6,5,4,.72);padding:.22rem .5rem;max-width:72%}
+.band .cred a{color:#e4d9c8}
+
+.band.right .in{text-align:right;display:flex;flex-direction:column;align-items:flex-end}
+.band.right::after{background:radial-gradient(120% 90% at 78% 32%,
+  color-mix(in srgb,var(--accent,#e0322b) 20%,transparent),transparent 62%),
+ linear-gradient(270deg,rgba(11,9,6,.55),transparent 55%)}
+.band.tall{min-height:clamp(340px,72vh,680px)}
+.band.short{min-height:clamp(200px,34vh,320px)}
+
+/* background-attachment:fixed is what makes this work and it is also the property mobile
+   Safari has never handled, and it repaints on every scroll frame. Off for coarse
+   pointers and for reduced motion; it degrades to a plain cover image, which is fine. */
+@media (pointer:coarse),(prefers-reduced-motion:reduce){.band{background-attachment:scroll}}
+@media print{.band{display:none}}
+
+:root{
+ --bg:#fff7ec;--panel:#ffffff;--ink:#1c1530;--mute:#675c77;--line:#f0dcc4;
+ --accent:#f04a00;--orange:#f04a00;--gold:#ffb000;--pink:#ff5c8a;--sky:#2f7fd8;--jade:#119c78;--fog:#eef3f8;--shadow:rgba(60,20,0,.14);
+ --display:"Avenir Next Condensed","HelveticaNeue-CondensedBold","Arial Narrow Bold","Franklin Gothic Heavy",Impact,system-ui,sans-serif;
+ --body:"Avenir Next",Avenir,"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+ --thai:"Noto Sans Thai","Leelawadee UI","Thonburi","Sukhumvit Set",Tahoma,sans-serif;
+ --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --bg:#120d20;--panel:#1d1631;--ink:#fbf2e8;--mute:#bcb0cc;--line:#352a4d;--accent:#ff7a3d;--gold:#ffc53d;--pink:#ff7aa2;--sky:#7fb4ff;--jade:#3fd1a8;--fog:#241c3a;--shadow:rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{
+ --bg:#120d20;--panel:#1d1631;--ink:#fbf2e8;--mute:#bcb0cc;--line:#352a4d;--accent:#ff7a3d;--gold:#ffc53d;--pink:#ff7aa2;--sky:#7fb4ff;--jade:#3fd1a8;--fog:#241c3a;--shadow:rgba(0,0,0,.5)}
+*{box-sizing:border-box}
+html{font-size:18px;scroll-behavior:smooth;scroll-padding-top:3.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-text-size-adjust:100%;overflow-x:hidden}
+:lang(th),.th{font-family:var(--thai);line-height:1.85}
+a{color:var(--accent);text-underline-offset:.18em}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+img{max-width:100%;height:auto;display:block}
+.mute{color:var(--mute)}.small{font-size:.84rem}
+
+header.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:3px solid var(--orange);
+ transition:transform .26s cubic-bezier(.4,0,.2,1),box-shadow .26s}
+body.nav-away header.top{transform:translateY(-102%)}
+body.nav-tight header.top{box-shadow:0 10px 24px -14px var(--shadow)}
+header.top nav,header.top .langsw{transition:opacity .18s,max-height .26s,margin .26s}
+body.nav-tight header.top nav,body.nav-tight header.top .langsw{opacity:0;max-height:0;margin-block:0;overflow:hidden;pointer-events:none}
+header.top .in{max-width:70rem;margin:0 auto;padding:.5rem 1rem;display:flex;gap:.4rem 1rem;align-items:center;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:800;font-size:1.2rem;text-transform:uppercase;text-decoration:none;color:var(--ink);white-space:nowrap;display:flex;align-items:center;gap:.45rem}
+.brand svg{width:2.2rem;height:auto;color:var(--orange)}.brand .th{font-size:.85rem;font-weight:600;text-transform:none;color:var(--orange)}
+header.top nav{display:flex;gap:.1rem .75rem;flex-wrap:wrap;font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;font-weight:800}
+:lang(th) header.top nav{text-transform:none;letter-spacing:0;font-size:.82rem}
+header.top nav a{text-decoration:none;color:var(--mute)}
+header.top nav a:hover{color:var(--ink);box-shadow:inset 0 -3px 0 var(--orange)}
+.langsw{margin-left:auto;font-size:.76rem;font-weight:800;letter-spacing:.08em}
+.langsw a{text-decoration:none;padding:.18rem .55rem;border:2px solid var(--line);border-radius:99px;color:var(--mute)}
+.langsw a[aria-current]{background:var(--orange);color:#fff;border-color:var(--orange)}
+
+.hero{position:relative;height:min(88vh,860px);min-height:520px;background:#0b0f2a;overflow:hidden}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y;cursor:grab}
+.hero canvas:active{cursor:grabbing}
+.hero-t{position:absolute;left:0;right:0;top:0;max-width:70rem;margin:0 auto;padding:2.2rem 1rem 0;pointer-events:none;color:#fff}
+.hero .kicker{display:block;font-family:var(--display);font-size:.74rem;font-weight:800;letter-spacing:.34em;text-transform:uppercase;color:#ffd58a;margin-bottom:.5rem;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.hero h1{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2.5rem,7.4vw,5.2rem);line-height:.86;margin:0;max-width:10ch;
+ background:linear-gradient(180deg,#fff 30%,#ffd9b8);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 18px rgba(20,0,40,.45))}
+:lang(th) .hero h1{line-height:1.12;max-width:12ch}
+.hero .lede{max-width:min(25rem,100%);color:#fff4ea;text-shadow:0 1px 12px rgba(0,0,0,.7);font-size:clamp(1rem,2.2vw,1.2rem)}
+.hero .hint{font-size:.78rem;color:#ffe2c2;opacity:.85;text-shadow:0 1px 8px #000;margin:.2rem 0}
+html.gg-day .hero .lede,html.gg-day .hero .hint{text-shadow:0 1px 14px rgba(0,20,60,.8)}
+@media (max-width:760px){.hero{height:82vh;min-height:560px}.hero-t{padding-top:1.3rem}}
+
+.deck{background:linear-gradient(90deg,#1c1530,#3a1740 50%,#1c1530);color:#fff7ec;border-bottom:4px solid var(--orange)}
+.deck .ctl{max-width:70rem;margin:0 auto;padding:.9rem 1rem .2rem}
+.deck .rng span{color:#ffd9b8}.deck output{color:#fff}
+.now{max-width:70rem;margin:0 auto;padding:.1rem 1rem .9rem;font-size:.86rem;color:#ffe9d6;min-height:1.6em}
+.ctl{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:flex-end;margin:.7rem 0}
+.rng{display:flex;flex-direction:column;gap:.15rem;flex:1 1 11rem;min-width:10rem;font-size:.8rem;font-weight:800;letter-spacing:.04em}
+.rng span{color:var(--mute)}.rng output{font-weight:700;color:var(--ink);margin-left:.3rem}
+input[type=range]{width:100%;accent-color:var(--orange);height:1.6rem}
+.num{display:flex;flex-direction:column;font-size:.8rem;font-weight:800;color:var(--mute)}
+.num input{font:inherit;font-size:1rem;width:7rem;padding:.35rem .5rem;border:2px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:.45rem}
+.btn{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.85rem;padding:.55rem 1.05rem;border-radius:99px;
+ background:var(--orange);color:#fff;text-decoration:none;border:0;cursor:pointer;box-shadow:0 3px 0 rgba(0,0,0,.2);transition:transform .12s}
+.btn:hover{transform:translateY(-1px)}.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--orange);box-shadow:inset 0 0 0 2px var(--orange)}
+.deck .btn.ghost{color:#ffd9b8;box-shadow:inset 0 0 0 2px #ffb37f}
+.btn[aria-pressed=true]{background:var(--gold);color:#1c1530;box-shadow:inset 0 0 0 2px var(--gold)}
+:lang(th) .btn{font-family:var(--thai);text-transform:none;letter-spacing:0;font-size:.92rem}
+.coat i{display:inline-block;width:1.1rem;height:1.1rem;border-radius:50%;box-shadow:0 0 0 2px #fff}
+.btn.coat{background:var(--panel);color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.btn.coat[aria-pressed=true]{box-shadow:inset 0 0 0 3px var(--orange);background:var(--panel)}
+
+main{max-width:70rem;margin:0 auto;padding:1rem 1rem 4rem}
+h2{font-family:var(--display);font-size:clamp(1.9rem,5vw,3rem);line-height:.95;margin:3.4rem 0 .8rem;font-weight:800;text-transform:uppercase;padding-bottom:1.1rem;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24'%3E%3Cpath d='M2 22V2M198 22V2M2 3Q100 38 198 3' fill='none' stroke='%23f04a00' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E") left bottom/min(14rem,60%) 1rem no-repeat}
+h3{font-family:var(--display);font-size:1.2rem;margin:1.6rem 0 .3rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+:lang(th) h1,:lang(th) h2,:lang(th) h3,:lang(th) .kicker,:lang(th) .band h2{font-family:var(--thai);letter-spacing:0;line-height:1.25;text-transform:none}
+p{margin:.6rem 0;max-width:44rem}
+.lede{font-size:clamp(1.05rem,2.3vw,1.22rem);max-width:44rem}
+.kicker{display:block;font-family:var(--display);font-size:.72rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--orange);margin-bottom:.4rem}
+
+.slab{display:grid;grid-template-columns:repeat(6,1fr);margin:1.8rem 0;gap:.6rem}
+.slab div{padding:.9rem .8rem;border-radius:18px;background:var(--panel);box-shadow:0 8px 24px -14px var(--shadow);position:relative;overflow:hidden}
+.slab div::after{content:"";position:absolute;right:-18px;top:-18px;width:56px;height:56px;border-radius:50%;background:radial-gradient(circle,var(--gold),transparent 70%);opacity:.35}
+.slab b{display:block;font-family:var(--display);font-size:clamp(1.8rem,4.4vw,2.7rem);line-height:.92;font-weight:800;color:var(--orange)}
+.slab span{display:block;font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);font-weight:800;margin-top:.35rem}
+.slab i{display:block;font-style:normal;font-size:.72rem;color:var(--mute);margin-top:.15rem}
+:lang(th) .slab span{letter-spacing:0;font-size:.8rem;text-transform:none}
+@media (max-width:860px){.slab{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.slab{grid-template-columns:repeat(2,1fr)}}
+
+.toy .stage{border-radius:22px;overflow:hidden;box-shadow:0 18px 40px -22px var(--shadow),0 0 0 3px var(--ink);margin:1rem 0 .4rem;background:var(--panel)}
+.toy .stage.round{border-radius:50%;aspect-ratio:1;max-width:28rem;box-shadow:0 18px 40px -18px rgba(0,60,140,.45);background:transparent}
+.stage canvas{display:block;width:100%}
+.c300{height:300px}.c320{height:320px}.c360{height:360px}.c420{height:100%}
+.tap{cursor:crosshair;touch-action:manipulation}
+@media (max-width:600px){.c360{height:300px}.c300,.c320{height:260px}}
+.out{font-size:1.02rem;min-height:1.6em;max-width:48rem}.out.big{font-size:1.12rem}
+.out b{color:var(--orange)}
+.eqs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.2rem 0}
+@media (max-width:860px){.eqs{grid-template-columns:1fr}}
+.eq{background:var(--panel);border-radius:18px;padding:.9rem 1.1rem;box-shadow:0 8px 24px -16px var(--shadow);margin:1rem 0}
+.eqs .eq{margin:0}
+.eq .k{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:var(--orange);color:#fff;border-radius:99px;padding:.1rem .6rem}
+.eq .k.blue{background:var(--sky)}.eq .k.jade{background:var(--jade)}
+:lang(th) .eq .k{letter-spacing:0;font-size:.8rem}
+.eq code{display:block;font-family:var(--mono);font-size:clamp(1.05rem,2.6vw,1.3rem);font-weight:700;margin:.5rem 0 .2rem;color:var(--ink)}
+.eq p{font-size:.92rem;margin:.3rem 0 0}
+.keys{list-style:none;padding:0;margin:.8rem 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.3rem 1.2rem;font-size:.92rem}
+.keys b{font-family:var(--mono);color:var(--orange)}
+@media (max-width:640px){.keys{grid-template-columns:1fr}}
+.toy.dark{background:linear-gradient(160deg,#141a44,#2b1650);color:#f4ecff;border-radius:28px;padding:.4rem 1.3rem 1.2rem;margin:3rem -.3rem}
+.toy.dark h2{margin-top:1.6rem}.toy.dark .rng span{color:#cdbfff}.toy.dark .rng output{color:#fff}
+.toy.dark .eq{background:rgba(255,255,255,.07)}.toy.dark .eq code{color:#fff}.toy.dark .stage{box-shadow:0 0 0 3px #ffb37f}
+.toy.dark .out b{color:#ffc27a}
+
+.fogbars{display:grid;gap:.5rem;margin:1rem 0;max-width:44rem}
+.fb{display:grid;grid-template-columns:8.5rem 1fr 4.5rem;align-items:center;gap:.6rem;font-size:.9rem}
+.fb .bar{height:.9rem;border-radius:99px;background:var(--fog);position:relative;overflow:hidden}
+.fb .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:99px}
+.fb b{text-align:right}
+.fogv{font-size:1.05rem;margin:.3rem 0 0}.fogv b{color:var(--orange)}
+.duo{display:grid;grid-template-columns:1fr 1.2fr;gap:1rem;margin:1.2rem 0}
+.duo figure{margin:0}.duo img{border-radius:18px;width:100%;height:100%;max-height:26rem;object-fit:cover}
+.duo figcaption{font-size:.8rem;color:var(--mute);margin-top:.35rem}
+@media (max-width:640px){.duo{grid-template-columns:1fr}}
+
+.moves{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+.moves div{background:var(--panel);border-radius:16px;padding:.8rem;box-shadow:0 8px 20px -14px var(--shadow);border-top:5px solid var(--orange)}
+.moves b{font-family:var(--display);font-size:1.8rem;display:block;line-height:1;color:var(--orange)}
+.moves span{font-size:.84rem;color:var(--mute)}
+@media (max-width:760px){.moves{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.gwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.6rem;align-items:center}
+@media (max-width:760px){.gwrap{grid-template-columns:1fr}}
+
+.stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.story{background:var(--panel);border-radius:20px;padding:1rem 1.1rem;box-shadow:0 10px 26px -16px var(--shadow);position:relative;overflow:hidden}
+.story:nth-child(3n+1){border-top:6px solid var(--orange)}.story:nth-child(3n+2){border-top:6px solid var(--sky)}.story:nth-child(3n){border-top:6px solid var(--gold)}
+.story .when{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.story h3{margin:.2rem 0 .3rem;font-size:1.15rem}.story p{margin:0;font-size:.95rem}
+@media (max-width:900px){.stories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.stories{grid-template-columns:1fr}}
+
+.band .in{max-width:70rem}
+.band .kicker{color:#ffd58a}
+.band{--accent:#f04a00;--display:"Avenir Next Condensed","Arial Narrow Bold",Impact,system-ui,sans-serif}
+
+.years{list-style:none;padding:0;margin:1rem 0;border-left:4px solid var(--orange)}
+.years li{padding:.1rem 0 .9rem 1.1rem;position:relative}
+.years li::before{content:"";position:absolute;left:-.62rem;top:.5rem;width:.95rem;height:.95rem;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--bg),0 0 14px var(--gold)}
+.years b{font-family:var(--display);font-size:1.4rem;display:block;line-height:1.1;color:var(--orange)}
+.made{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}
+.made li{background:var(--panel);border-radius:14px;padding:.7rem .9rem;font-size:.9rem;box-shadow:0 6px 18px -14px var(--shadow)}
+.made .lic{font-size:.7rem;font-weight:800;color:var(--jade);letter-spacing:.06em}
+@media (max-width:760px){.made{grid-template-columns:1fr}}
+.src{columns:2 18rem;padding-left:1.1rem}
+.src li{margin-bottom:.3rem;break-inside:avoid}
+footer.bot{border-top:3px solid var(--orange);background:var(--panel)}
+footer.bot .in{max-width:70rem;margin:0 auto;padding:1.4rem 1rem 3rem;font-size:.82rem;color:var(--mute)}
+footer.bot a{color:var(--mute)}
+@media print{.hero canvas,header.top,.deck{display:none}.hero{height:auto;min-height:0;background:none}.hero-t{position:static;color:var(--ink)}}
+</style>
+</head><body>
+<header class="top"><div class="in">
+<a class="brand" href=""><svg viewBox="0 0 64 24" aria-hidden="true"><path d="M2 20h60M14 20V3M50 20V3M2 12Q14 3 14 3Q32 19 50 3Q50 3 62 12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg> Golden Gate <span class="th">โกลเดนเกต</span></a>
+<nav aria-label="Sections"><a href="#hang">Cable</a><a href="#tide">Tide</a><a href="#fit">Under</a><a href="#fog">Fog</a><a href="#sing">Song</a><a href="#paint">Paint</a><a href="#breathe">Heat</a><a href="#globe">You</a><a href="#days">Days</a><a href="#sources">Sources</a></nav>
+<span class="langsw"><a href="" hreflang="en" lang="en" aria-current=page>EN</a> <a href="th/" hreflang="th" lang="th">ไทย</a></span>
+</div></header>
+
+<section class="hero" aria-label="The bridge, drawn live">
+<canvas id="gg-hero" role="img" aria-label="The Golden Gate Bridge drawn from its own numbers, under the sky over it now"></canvas>
+<div class="hero-t">
+<span class="kicker">San Francisco · 1937 · 4,200 feet</span>
+<h1>The Golden Gate Bridge</h1>
+<p class="lede">Drawn by arithmetic, under the sun, moon, fog and tide that are over it right now.</p>
+<p class="hint">Drag the picture to walk around the bay.</p>
+</div>
+</section>
+<div class="deck">
+<div class="ctl">
+<label class="rng"><span>Time <output id="gg-time-l"></output></span><input type="range" id="gg-time" min="-12" max="12" value="0" step="0.25"></label>
+<label class="rng"><span>Fog <output id="gg-fog-l"></output></span><input type="range" id="gg-fog" min="0" max="100" value="35" step="1"></label>
+<label class="rng"><span>Wind <output id="gg-wind-l"></output></span><input type="range" id="gg-wind" min="0" max="75" value="8" step="1"></label>
+<div class="btns"><button type="button" id="gg-live" class="btn">Now</button>
+<button type="button" id="gg-sing" class="btn ghost" aria-pressed="false">♪ Sing</button>
+<button type="button" id="gg-horn" class="btn ghost" aria-pressed="false">Foghorns</button></div>
+</div>
+<p class="now" id="gg-now" aria-live="polite"></p>
+</div>
+
+<main>
+<div class="slab"><div><b>4,200</b><span>feet between the towers</span><i>1,280 m</i></div><div><b>746</b><span>feet, tower above water</span><i>227 m</i></div><div><b>470</b><span>feet, the cable&#x27;s dip</span><i>143 m</i></div><div><b>27,572</b><span>wires in each cable</span><i>Ø 4.9 mm</i></div><div><b>80,000</b><span>miles of wire</span><i>129,000 km</i></div><div><b>1937</b><span>opened</span><i>27 May</i></div></div>
+
+<section id="hang" class="toy">
+<h2>Hang a chain</h2>
+<p class="lede">Hold a chain by its ends and it sags into a catenary. Hang a flat, even road from it and the curve turns into a parabola. The Golden Gate&#x27;s main cable carries the road, so it is the parabola.</p>
+<div class="stage"><canvas id="cv-hang" class="c360"></canvas></div>
+<div class="ctl">
+<label class="rng"><span>Road weight <output id="hang-road-l"></output></span><input type="range" id="hang-road" min="0" max="100" value="100" step="1"></label>
+<label class="rng"><span>Dip (taller towers, deeper dip) <output id="hang-sag-l"></output></span><input type="range" id="hang-sag" min="150" max="900" value="470" step="10"></label>
+</div>
+<p class="out" id="hang-out" aria-live="polite"></p>
+<div class="eqs">
+<div class="eq"><span class="k">the bridge</span><code>y = 470 × (x ÷ 2,100)²</code>
+<p>Reading it: x is how far you are from the middle, in feet. At a tower x is 2,100, so the cable is 470 feet higher there than at mid-span. Halfway to a tower it is a quarter as high: 117.5 feet.</p></div>
+<div class="eq"><span class="k blue">a chain alone</span><code>y = a (cosh(x ÷ a) − 1)</code>
+<p>Reading it: a is the sideways pull divided by the chain&#x27;s weight per foot. cosh grows slowly near the middle and fast near the ends, so a bare chain hangs a little fuller at the shoulders.</p></div>
+<div class="eq"><span class="k jade">the pull</span><code>H = w L² ÷ (8 d)</code>
+<p>Reading it: the sideways pull H equals the weight per foot w, times the span L squared, divided by eight times the dip d. Double the dip and the pull halves. That is why the towers are tall.</p></div>
+</div>
+<p class="mute small">The side spans hang from the same pull, so their dip scales with span squared: 470 × (1,125 ÷ 4,200)² = 33.7 feet. The picture at the top uses it.</p>
+</section>
+
+<section class="band tall" style="background-image:url(img/marshalls.jpg)"><div class="in"><span class="kicker">Marshall&#x27;s Beach</span><h2>Orange against blue</h2><p>Irving Morrow picked the colour because it sits warm on the hills and stands out from the sea and sky.</p></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Marshall%E2%80%99s_Beach,_March_2018.jpg">Frank Schulenburg</a> · CC BY-SA 4.0</span></section>
+
+<section id="tide" class="toy">
+<h2>The tide machine</h2>
+<p class="lede">In 1872 Lord Kelvin built a brass machine that predicted tides by adding up turning wheels. Here are eight wheels for the water under the Golden Gate, fitted to NOAA&#x27;s prediction for its gauge at the Presidio, about 2 km from the south tower.</p>
+<div class="stage"><canvas id="cv-tide" class="c360"></canvas></div>
+<div class="ctl"><div class="btns"><button type="button" id="tide-play" class="btn" aria-pressed="true">Run / stop</button>
+<button type="button" id="tide-now" class="btn ghost">Back to now</button></div></div>
+<p class="out" id="tide-out" aria-live="polite"></p>
+<ul class="keys">
+<li><b>M2</b> the moon, twice a day: one turn every 12 h 25 min</li>
+<li><b>K1 · O1 · P1 · Q1</b> once a day, from the tilt of the moon&#x27;s and sun&#x27;s paths</li>
+<li><b>S2</b> the sun, twice a day: exactly 12 hours</li>
+<li><b>N2 · K2</b> the moon drawing nearer and farther, and the slow tilt of both</li>
+</ul>
+<p class="mute small">Line: the wheels. Blue dots: NOAA&#x27;s prediction. Black dot: the water NOAA measured last.</p>
+</section>
+
+<section id="fit" class="toy">
+<h2>Will it fit?</h2>
+<p class="lede">The bottom of the deck at mid-span is 220 feet above average high water. The tide adds or takes away a few feet, twice a day.</p>
+<div class="stage"><canvas id="cv-fit" class="c320"></canvas></div>
+<div class="ctl"><div class="btns">
+<button type="button" class="btn ghost" data-ship="cranes1" aria-pressed="false">Cranes 2000</button>
+<button type="button" class="btn ghost" data-ship="cranes2" aria-pressed="true">Cranes 2002 · 2005</button>
+<button type="button" class="btn ghost" data-ship="zhenhua" aria-pressed="false">Zhen Hua 15</button>
+<button type="button" class="btn ghost" data-ship="me" aria-pressed="false">You</button></div>
+<label class="num"><span>Your height, cm</span><input type="number" id="fit-me" min="50" max="250" value="160" inputmode="numeric"></label>
+</div>
+<p class="out" id="fit-out" aria-live="polite"></p>
+<p class="mute small">Three ships brought giant cranes from China to the Port of Oakland: 223.75 feet tall in 2000 (about 8 feet to spare), 227.7 feet in 2002 and 2005 (12 and 9–10 feet). In 2010 the Zhen Hua 15 stopped in Drakes Bay to lower cranes that stood 253 feet.</p>
+</section>
+
+<section class="band right" style="background-image:url(img/fort-point.jpg)"><div class="in"><span class="kicker">Fort Point</span><h2>A bridge inside the bridge</h2><p>Charles Ellis drew a steel arch over the 1861 fort so nobody had to tear it down.</p></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:Fort_Point_National_Historic_Site_and_Golden_Gate_Bridge.jpg">Brocken Inaglory</a> · CC BY-SA 3.0</span></section>
+
+<section id="fog" class="toy">
+<h2>Fog</h2>
+<p class="lede">Air turns to fog when it cools to its dew point, the temperature at which it can hold no more water. Wet Pacific air blowing over the cold California Current does that at sea level.</p>
+<div class="fogbars" id="fog-out" aria-live="polite"></div>
+<div class="duo">
+<figure><img src="img/rays.jpg" alt="Sunbeams through fog pouring over the Marin hills toward the bridge" width="1489" height="1600" loading="lazy">
+<figcaption>Fog pouring over the Marin hills. <a href="https://commons.wikimedia.org/wiki/File:San_francisco_in_fog_with_rays.jpg">Brocken Inaglory · CC BY-SA 3.0</a></figcaption></figure>
+<figure><img src="img/raindrops.jpg" alt="Raindrops on glass, each showing a small upside-down Golden Gate Bridge" width="1600" height="1187" loading="lazy">
+<figcaption>Every raindrop is a lens and shows the bridge upside down. <a href="https://commons.wikimedia.org/wiki/File:Refraction_of_Golden_Gate_Bridge_in_rain_droplets_1.jpg">Brocken Inaglory · CC BY-SA 3.0</a></figcaption></figure>
+</div>
+<h3>Foghorns</h3>
+<p>Five horns, switched on by hand when fog comes in under the road: about two and a half hours a day over a year, less than half an hour a day in March, five hours and more in summer. The two at the south tower blast together for 2 seconds every 20. The three at mid-span give two 1-second notes, 2 seconds apart, then wait 36 seconds. Ships coming in keep left of the tower horn and right of the mid-span horns.</p>
+<p><button type="button" id="horn-play" class="btn" aria-pressed="false">Play the foghorns</button> <span class="mute small">The timing is the District&#x27;s; the pitches here stand in for the real ones.</span></p>
+</section>
+
+<section class="band " style="background-image:url(img/fog-deck.jpg)"><div class="in"><span class="kicker">Summer</span><h2>The fog comes in under the road</h2><p>Warm, wet ocean air rides in over cold water and turns to cloud at sea level.</p></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_at_sunset_1.jpg">Brocken Inaglory</a> · CC BY-SA 3.0</span></section>
+
+<section id="sing" class="toy dark">
+<h2>The railing sings</h2>
+<p class="lede">In 2020 new slats on the west railing let the bridge stand 100 mph winds. When the wind passes 22 mph, the slats hum. A recording held four notes: 354, 398, 439 and 481 hertz, which are F, G, A and B.</p>
+<div class="stage"><canvas id="cv-sing" class="c300"></canvas></div>
+<div class="ctl"><label class="rng"><span>Wind <output id="sing-wind-l"></output></span><input type="range" id="sing-wind" min="0" max="60" value="24" step="1"></label>
+<div class="btns"><button type="button" id="sing-play" class="btn" aria-pressed="false">♪ Hear it</button></div></div>
+<p class="out" id="sing-out" aria-live="polite"></p>
+<div class="eq"><span class="k">an Aeolian tone</span><code>f = 0.2 × U ÷ d</code>
+<p>Reading it: wind at speed U flowing past an edge d wide sheds a swirl off one side, then the other, f times a second. The 0.2 is the Strouhal number, close to the same for most blunt edges. Swirls at the right rate shake a slat at its own note, and it rings.</p></div>
+</section>
+
+<section id="paint" class="toy">
+<h2>Is someone always painting it?</h2>
+<p class="lede">Yes. The District paints the bridge continuously, and says so: not end to end each year, not once every seven years, but wherever inspections find rust coming through. Salt in the fog eats steel. The crew is 28 painters, 5 painter laborers and a chief bridge painter, with 13 ironworkers and 3 pusher ironworkers who replace rusted steel and rivets.</p>
+<div class="stage"><canvas id="cv-paint" class="c300 tap"></canvas></div>
+<p class="mute small">Tap the rust to patch it. <span id="paint-out" aria-live="polite"></span></p>
+<h3>The colour</h3>
+<p>The steel arrived from Pennsylvania and New Jersey coated in red lead primer. Irving Morrow, riding the ferry to work, liked it on the rising towers. He tested black, grey and aluminum; warm grey came a distant second. The Navy asked for black and yellow stripes. Try them all; the bridge at the top of the page changes too.</p>
+<div class="btns coats">
+<button type="button" class="btn coat" data-coat="orange" aria-pressed="true"><i style="background:#f04a00"></i>International Orange</button>
+<button type="button" class="btn coat" data-coat="grey" aria-pressed="false"><i style="background:#8f877c"></i>Warm grey</button>
+<button type="button" class="btn coat" data-coat="aluminum" aria-pressed="false"><i style="background:#c9cdd1"></i>Aluminum</button>
+<button type="button" class="btn coat" data-coat="black" aria-pressed="false"><i style="background:#1d1d20"></i>Black</button>
+<button type="button" class="btn coat" data-coat="navy" aria-pressed="false"><i style="background:repeating-linear-gradient(0deg,#1d1d20 0 5px,#f2c230 5px 10px)"></i>Navy stripes</button>
+</div>
+<div class="eq"><span class="k">the formula</span><code>C 0 · M 69 · Y 100 · K 6</code>
+<p>The District publishes its mix for anyone to use. On a screen: red = 255 × (1 − 0) × (1 − 0.06) = 240, green = 255 × (1 − 0.69) × (1 − 0.06) = 74, blue = 255 × (1 − 1) × (1 − 0.06) = 0. That is #F04A00, the orange on this page. The nearest paint off the shelf is Sherwin-Williams Fireweed, SW 6328.</p></div>
+</section>
+
+<section class="band right" style="background-image:url(img/building.jpg)"><div class="in"><span class="kicker">1933–1937</span><h2>1,604 days</h2><p>Work began on 5 January 1933. Cars crossed on 28 May 1937.</p></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:Construction_of_the_Golden_Gate_Bridge_3c22793u.jpg">Chas. M. Hiller, Associated Oil Company</a> · public domain</span></section>
+
+<section id="breathe" class="toy">
+<h2>It breathes</h2>
+<p class="lede">Steel grows about 12 millionths of its length for each degree. A longer cable hangs lower, so a warm afternoon lets the middle of the bridge down and a cold night pulls it up.</p>
+<div class="stage"><canvas id="cv-warm" class="c300"></canvas></div>
+<div class="ctl"><label class="rng"><span>Air temperature <output id="warm-t-l"></output></span><input type="range" id="warm-t" min="-5" max="40" value="16" step="1"></label></div>
+<p class="out" id="warm-out" aria-live="polite"></p>
+<div class="eq"><span class="k">the stretch</span><code>Δd = (3 S ÷ 16 d) × ΔL</code>
+<p>Reading it: for a shallow parabola of span S and dip d, lengthening the cable by ΔL deepens the dip by 3S ÷ 16d times as much. Here 3 × 4,200 ÷ (16 × 470) = 1.68, so every foot of stretch drops the middle 1.68 feet.</p></div>
+<div class="moves">
+<div><b>10.8 ft</b><span>down at mid-span, the most it was built to move: heavy traffic in the middle, none on the side spans, a hot day</span></div>
+<div><b>5.8 ft</b><span>up: the opposite load on a cold day</span></div>
+<div><b>27.7 ft</b><span>sideways in a sustained wind</span></div>
+<div><b>22 in</b><span>the towers lean toward shore; 18 inches toward the channel</span></div>
+</div>
+<p class="mute small">The toy counts the cable&#x27;s stretch only. Traffic, wind and the towers&#x27; own lean add to it.</p>
+</section>
+
+<section class="band " style="background-image:url(img/carriers-1936.jpg)"><div class="in"><span class="kicker">November 1936</span><h2>The fleet sails under</h2><p>US Navy aircraft carriers pass beneath the unfinished bridge, six months before it opened.</p></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:US_Navy_aircraft_carriers_passing_under_the_Golden_Gate_Bridge_in_November_1936.jpg">U.S. Navy</a> · public domain</span></section>
+
+<section id="globe" class="toy">
+<h2>From where you are</h2>
+<div class="gwrap"><div class="stage round"><canvas id="cv-globe" class="c420"></canvas></div>
+<div><p class="out big" id="globe-out" aria-live="polite"></p>
+<div class="btns"><button type="button" id="globe-here" class="btn ghost">Use my location</button>
+<button type="button" id="globe-wrap" class="btn" aria-pressed="false">Wrap the wire around the Earth</button></div>
+<p>Each main cable is 61 bundles of about 452 wires, 27,572 wires in all, each 4.9 mm thick. Laid end to end, the wire in both cables runs 80,000 miles: 3.2 times around the equator. It was spun in place by shuttles running back and forth like a loom, in 6 months and 9 days.</p></div></div>
+</section>
+
+<section class="band right tall" style="background-image:url(img/hawk-hill.jpg)"><div class="in"><span class="kicker">Hawk Hill, blue hour</span><h2>The lights come on</h2><p>Red lamps top the towers and trace the cables, for aircraft. Green and white under mid-span, for ships.</p></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu.jpg">Daniel L. Lu</a> · CC BY-SA 4.0</span></section>
+
+<section id="days">
+<h2>Days at the bridge</h2>
+<div class="stories"><article class="story"><span class="when">27 May 1937</span><h3>Pedestrian Day</h3><p>Before any car, 200,000 people crossed on foot and on roller skates. Donald Bryan, a college sprinter, was first end to end.</p></article><article class="story"><span class="when">28 May 1937</span><h3>A blockade of beauty queens</h3><p>The officials&#x27; motorcade passed three ceremonial barriers. The last was a row of beauty queens, who made Joseph Strauss hand the bridge over before they let him through. At noon, President Roosevelt pressed a button in Washington and the cars began.</p></article><article class="story"><span class="when">1933–1937</span><h3>The first hard hats</h3><p>Edward Bullard of San Francisco had made a &#x27;Hard-Boiled Hat&#x27; of steamed canvas and glue for miners. He adapted it for the bridge crews.</p></article><article class="story"><span class="when">1933–1937</span><h3>The Half Way to Hell Club</h3><p>A net hung under the work caught 19 men, who named their club for how far they had fallen. On 17 February 1937 a scaffold broke through the net and ten men died.</p></article><article class="story"><span class="when">1846</span><h3>Chrysopylae</h3><p>Captain John Frémont named the strait for Istanbul&#x27;s Golden Horn: Chrysopylae, Golden Gate. The bridge is orange; the gate is the water.</p></article><article class="story"><span class="when">24 May 1987</span><h3>The deck went flat</h3><p>For the 50th birthday about 300,000 people crowded onto the deck at once, and the gentle upward arch of the main span flattened out under them. It was built to flex that way.</p></article><article class="story"><span class="when">19 May 2004</span><h3>A deer takes the toll lane</h3><p>A young deer bounded the whole span, zipped through a FasTrak lane, took the 19th Avenue exit and vanished into the Presidio. Two more crossed in the evening commute in 2014.</p></article><article class="story"><span class="when">29 Aug 2005</span><h3>Ostrich</h3><p>A six-foot ostrich broke out of a cargo van and stopped traffic both ways while people ran for their cameras.</p></article><article class="story"><span class="when">10 Aug 2008</span><h3>A pelican named G.G.</h3><p>A dazed pelican landed on the roadway. Bird rescuers named her G.G. and let her go a month later.</p></article><article class="story"><span class="when">5 Feb 2001</span><h3>A Beetle on a string</h3><p>Engineering students from the University of British Columbia, keeping their tradition of hanging something large from something famous, dangled a Volkswagen Beetle off the side.</p></article><article class="story"><span class="when">27 Oct 1989</span><h3>The busiest day</h3><p>Ten days after the Loma Prieta earthquake broke the Bay Bridge, 162,414 vehicles crossed the Golden Gate. It came through undamaged.</p></article><article class="story"><span class="when">Cincinnati</span><h3>A brick in the anchorage</h3><p>Joseph Strauss set a brick from his old university&#x27;s demolished McMicken Hall into the south anchorage before the concrete went in.</p></article></div>
+</section>
+
+<section class="band short" style="background-image:url(img/night.jpg)"><div class="in"><span class="kicker">Night</span><h2>Two towers, one city</h2></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:Night_Panorama_of_Golden_Gate_Bridge.jpg">Brocken Inaglory</a> · CC BY-SA 3.0</span></section>
+
+<section id="years">
+<h2>Years</h2>
+<ol class="years"><li><b>1846</b><span>Frémont names the strait Golden Gate.</span></li><li><b>1916</b><span>James Wilkins proposes a bridge in the San Francisco Bulletin.</span></li><li><b>1923</b><span>The Golden Gate Bridge and Highway District Act passes.</span></li><li><b>1933</b><span>5 January: work begins.</span></li><li><b>1937</b><span>27 May on foot, 28 May by car. Longest main span and tallest towers of any suspension bridge.</span></li><li><b>1951</b><span>1 December: gusts of 69 mph close the bridge; the deck sways and rolls.</span></li><li><b>1954</b><span>Bracing under the deck stiffens it against twisting.</span></li><li><b>1964</b><span>The Verrazzano–Narrows Bridge in New York takes the longest-span title.</span></li><li><b>1968</b><span>Tolls southbound only: the first major bridge in the world to charge one way.</span></li><li><b>1970</b><span>The ten-cent sidewalk toll ends.</span></li><li><b>1986</b><span>A steel deck 40% lighter replaces the concrete one, 747 sections over 401 nights.</span></li><li><b>1987</b><span>The 50th birthday flattens the deck.</span></li><li><b>2020</b><span>New railing slats let the bridge take 100 mph winds, and it starts to sing.</span></li></ol>
+</section>
+
+<section class="band " style="background-image:url(img/low-fog.jpg)"><div class="in"><span class="kicker">From the Marin Headlands</span><h2>Two bridges and a sea of fog</h2></div><span class="cred"><a href="https://commons.wikimedia.org/wiki/File:San_Francisco_with_two_bridges_and_the_low_fog.jpg">Brocken Inaglory</a> · CC BY-SA 3.0</span></section>
+
+<section id="sources">
+<h2>Made from</h2>
+<p>Open data and free-licence work from these, credited where it appears; the page&#x27;s own code is on GitHub.</p>
+<ul class="made"><li><b>NOAA Tides &amp; Currents</b> <span class="lic">public domain</span><br>tide wheels, the water level now</li><li><b>Open-Meteo</b> <span class="lic">CC BY 4.0</span><br>wind, temperature, dew point, visibility, sea temperature</li><li><b>Natural Earth</b> <span class="lic">public domain</span><br>the land on the globe</li><li><b>Wikimedia Commons</b> <span class="lic">CC BY-SA, public domain</span><br>the photographs</li><li><b>Wikipedia</b> <span class="lic">CC BY-SA 4.0</span><br>facts and dates</li><li><b>Golden Gate Bridge District</b> <span class="lic"></span><br>numbers, colour formula, foghorn timing, painters</li></ul>
+<h3>Sources</h3>
+<ul class="src"><li><a href="https://www.goldengate.org/bridge/history-research/statistics-data/design-construction-stats/">Golden Gate Bridge District: design and construction stats</a></li><li><a href="https://www.goldengate.org/bridge/history-research/bridge-features/color-art-deco-styling/">District: colour and Art Deco styling</a></li><li><a href="https://www.goldengate.org/bridge/bridge-maintenance/painting-the-bridge/">District: painting the bridge</a></li><li><a href="https://www.goldengate.org/bridge/history-research/bridge-features/foghorns-beacons/">District: foghorns and beacons</a></li><li><a href="https://www.goldengate.org/bridge/history-research/statistics-data/faqs/">District: FAQs</a></li><li><a href="https://www.goldengate.org/bridge/history-research/moments-events/fun-interesting-events/">District: fun and interesting events</a></li><li><a href="https://www.goldengate.org/bridge/history-research/statistics-data/whats-in-a-name/">District: what&#x27;s in a name</a></li><li><a href="https://www.goldengate.org/exhibits/suspension-cable-tension-vs-tower-height/">District: cable tension vs tower height exhibit</a></li><li><a href="https://www.usni.org/magazines/proceedings/1935/april/golden-gate-and-san-francisco-bay-bridges">US Naval Institute Proceedings, April 1935 (470 ft sag)</a></li><li><a href="https://en.wikipedia.org/wiki/Golden_Gate_Bridge">Wikipedia: Golden Gate Bridge</a></li><li><a href="https://tidesandcurrents.noaa.gov/stationhome.html?id=9414290">NOAA Tides &amp; Currents, station 9414290</a></li><li><a href="https://open-meteo.com/">Open-Meteo weather and marine APIs</a></li><li><a href="https://www.naturalearthdata.com/">Natural Earth</a></li><li><a href="https://commons.wikimedia.org/wiki/Category:Golden_Gate_Bridge">Wikimedia Commons</a></li><li><a href="https://en.wikipedia.org/wiki/Tide-predicting_machine">Wikipedia: Lord Kelvin&#x27;s tide-predicting machine</a></li><li><a href="https://en.wikipedia.org/wiki/Aeolian_sound">Wikipedia: Aeolian sound</a></li></ul>
+</section>
+</main>
+<footer class="bot"><div class="in">Text CC BY 4.0, NaNoBotCo. Code MIT. Photographs keep their own licences. · <a href="https://github.com/NaNoBotCo/golden-gate">GitHub</a></div></footer>
+<script src="gg.js" defer></script><script src="top.js" defer></script>
+</body></html>
