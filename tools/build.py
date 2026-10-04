@@ -58,7 +58,7 @@ BANDS = {
                       ("U.S. Navy", "public domain", C + "US_Navy_aircraft_carriers_passing_under_the_Golden_Gate_Bridge_in_November_1936.jpg"), ""),
     "hawk-hill": (("Hawk Hill, blue hour", "เนินฮอว์กฮิลล์ ยามโพล้เพล้"), ("The lights come on", "ไฟเริ่มสว่าง"),
                   ("Red lamps top the towers and trace the cables, for aircraft. Green and white under mid-span, for ships.",
-                   "ไฟแดงบนยอดเสาและตามสายเคเบิลไว้เตือนเครื่องบิน ไฟเขียวกับขาวใต้กลางสะพานไว้บอกเรือ"),
+                   "ไฟแดงบนยอดเสาและตามสายเคเบิลไว้ให้เครื่องบินเห็น ไฟเขียวกับขาวใต้กลางสะพานไว้บอกเรือ"),
                   ("Daniel L. Lu", "CC BY-SA 4.0", C + "Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu.jpg"), "right tall"),
     "night": (("Night", "กลางคืน"), ("Two towers, one city", "สองเสา หนึ่งเมือง"), ("", ""),
               ("Brocken Inaglory", "CC BY-SA 3.0", C + "Night_Panorama_of_Golden_Gate_Bridge.jpg"), "short"),
