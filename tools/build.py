@@ -6,6 +6,7 @@ bar that folds away, and docs/gg.js for everything that moves.
     python3 tools/build.py
 """
 import html
+import ogcards
 import os
 import sys
 
@@ -594,6 +595,8 @@ def main():
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, "w", encoding="utf-8").write(page())
         print("wrote", out)
+    ogcards.copy(ROOT, DOCS)
+    ogcards.apply_tree(DOCS, SITE)
 
 
 if __name__ == "__main__":
